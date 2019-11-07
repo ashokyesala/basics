@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="js/action.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script>
+			// once the page is loaded
+			$(document).ready(function(){
+				$("img").mouseover(function(){
+				$(this).animate({
+					width:"400px",
+					height:"400px"
+					});
+				});
+				$("img").mouseout(function(){
+				$(this).animate({
+					width:"200px",
+					height:"200px"
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+			<div class="box">
+			<div class="box-title"><H3>WHAT IS HTML</H3></div>
+			<div class="box-desc"><P>HTML is hyper text markup language used to develop static web pages</P></div>
+		</div>
+			<div class="box">
+			<div class="box-title"><h3>WHAT IS CSS</h3></div>
+			<div class="box-desc"><P>CSS stands for cascading style sheet. it is used to beautify the html page</P></div>
+		</div>	
+		<div class="box">
+			<div class="box-title"><h3>WHAT IS JS</h3></div>
+			<div class="box-desc"><P>JS stands for JAVA script. is the browser programming language</P></div>
+		</div>
+		<div style="clear:left"></div>
+		<button onclick="magicHappens()">magic happens</button>
+		<button onclick="hide()">hide</button>
+		<button onclick="show()">show</button>
+		<button onclick="toggle()">toggle</button>
+		<button onclick="dance()">dance</button><br>
+		<img class="img" src="images/image.jpg" height="200px" width="200px">
+		<br>
+		<label>user</label>
+		<input id="iduser">
+		<label>song</label>
+		<input id="idsong">
+		<button onclick="addTable()">Add Records</button>
+		<button onclick="callMe()">click here</button>
+		<button onclick="showAsync()">showAsync</button>
+		<button onclick="addElement()">addElement</button>
+		<div id="newelement"></div>
+		<div style="clear:left"></div><br>
+		<div id="table">
+			<table>
+				<thead>
+						<tr>
+							<td>user</td>
+							<td>song</td>
+						</tr>
+				</thead>
+				<tbody id="idtbody">
+				</tbody>
+			</table>
+		</div>
+
+	</body>
+</html>
